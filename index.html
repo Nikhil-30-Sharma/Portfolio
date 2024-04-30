@@ -190,14 +190,14 @@
             <div class="input-box">
                 <input type="hidden" name="access_key" value="0706233a-a0f3-4bce-aaba-c9eae9249927">
 
-                <input type="text" name="name" placeholder="Full Name">
-                <input type="email" name="email" placeholder="Email Address">
+                <input type="text" id="text" name="name" placeholder="Full Name" required>
+                <input type="email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" name="email" placeholder="Email Address" required>
             </div>
             <div class="input-box">
-                <input type="number" name="number" placeholder="Mobile Number">
-                <input type="text" name="Subject" placeholder="Email Subject">
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Mobile Number" required>
+                <input type="text" name="Subject" placeholder="Email Subject" required>
             </div>
-            <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <div class="h-captcha" data-captcha="true"></div>
             <input type="submit" value="Send Message" class="btn">
         </form>
